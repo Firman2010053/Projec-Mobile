@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+
+
+        android:id="@+id/no1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector1">
+
+        <ImageView
+            android:id="@+id/man1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:background="@drawable/doku"/>
+
+        <ImageView
+            android:id="@+id/man2"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:layout_toRightOf="@id/man1"
+            android:background="@drawable/qr"/>
+
+        <Button
+            android:id="@+id/btnman3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/man2"
+            android:background="@drawable/user" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+    android:id="@+id/no2"
+        android:layout_below="@+id/no1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:background="@drawable/selector2">
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Rp.900.666.356"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+
+        <TextView
+            android:id="@+id/rrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_290sdp"
+            android:text="FIRMAN"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/crol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/no2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/srol"
+            android:layout_below="@+id/no1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_570sdp"
+            android:background="#E8EAF6">
+
+
+
+    <RelativeLayout
+        android:id="@+id/no3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="#E57373">
+
+        <ImageButton
+            android:id="@+id/btn_pesawat"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            app:backgroundTint="@color/black"
+            android:background="@drawable/bayar"
+            />
+        <TextView
+            android:id="@+id/tex5"
+            android:layout_below="@+id/btn_pesawat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <Button
+            android:id="@+id/btn_kereta"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_toRightOf="@id/btn_pesawat"
+            app:backgroundTint="@color/black"
+            android:background="@drawable/isisaldo"
+            />
+
+        <TextView
+            android:id="@+id/tex6"
+            android:layout_below="@+id/btn_kereta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isi saldo"
+            android:layout_marginLeft="@dimen/_115sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <Button
+            android:id="@+id/btn_motor"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_toRightOf="@id/btn_kereta"
+            app:backgroundTint="@color/black"
+            android:background="@drawable/transfer"
+            />
+
+        <TextView
+            android:id="@+id/tex7"
+            android:layout_below="@+id/btn_motor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:layout_marginLeft="@dimen/_190sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <Button
+            android:id="@+id/btn_mobil"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_15ssp"
+            android:layout_toRightOf="@id/btn_motor"
+            app:backgroundTint="@color/black"
+            android:background="@drawable/aktivitas"
+            />
+
+        <TextView
+            android:id="@+id/tex8"
+            android:layout_below="@+id/btn_mobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktivitas"
+            android:layout_marginLeft="@dimen/_265sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/no3"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/selector2">
+
+        <ImageView
+            android:id="@+id/lima"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:src="@drawable/pulsa" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Pulsa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/enam"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_toRightOf="@id/lima"
+            android:src="@drawable/paketdata" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text=" Paket Data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tujuh"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_toRightOf="@id/enam"
+            android:src="@drawable/listrik" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tujuh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_205sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Listrik"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/selip"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_toRightOf="@id/tujuh"
+            android:src="@drawable/bpjs" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tujuh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_290sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Tiket"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delapan"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_below="@+id/lima"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:src="@drawable/mintadana" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delapan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Minta Dana"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sembilan"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_below="@id/enam"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_35ssp"
+            android:layout_toRightOf="@id/delapan"
+            android:src="@drawable/transfer" />
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delapan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_115sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Transfer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sepuluh"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_below="@id/tujuh"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_35ssp"
+            android:src="@drawable/voucher"
+            android:layout_toRightOf="@id/sembilan"/>
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delapan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Voucher"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sebelas"
+            android:layout_width="@dimen/_60ssp"
+            android:layout_height="@dimen/_60ssp"
+            android:layout_below="@id/tujuh"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_35ssp"
+            android:src="@drawable/lainnya"
+            android:layout_toRightOf="@id/sepuluh"/>
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delapan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_285sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Lainnya"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_below="@id/no4"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/lyuscrol"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_150sdp"
+                android:background="#C5CAE9"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sc1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="@dimen/_340sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:src="@drawable/bannerutama" />
+
+                <ImageView
+                    android:id="@+id/sc2"
+                    android:layout_width="@dimen/_340sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/banner1" />
+
+                <ImageView
+                    android:id="@+id/sc3"
+                    android:layout_width="@dimen/_340sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/banner2" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
